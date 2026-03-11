@@ -43,7 +43,7 @@ is_male : Bool = true
 ```
 as programmers, we are lazy you will agree with me the first version is better just focus on writing and let the compiler figure it out 
 
-## Why Types or as i like to call it data types matter 
+## Why Types (data types) matters 
 Try this 
 ```crystal
 age = 17
@@ -53,7 +53,7 @@ puts age + 10
 ```crystal
 age = 17 
 puts age + "10" # Error can't add number to text 
-# This isnt the actual error response but just to know you can't and shouldn't mix up types 
+# This isnt the actual error response but just know you can't and shouldn't mix up types 
 ```
 ## Naming your variables 
 as a quote i saw from the Odin project which says "write codes as if the future maintainer is the most laziest person on earth"
