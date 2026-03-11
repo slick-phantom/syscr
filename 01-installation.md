@@ -25,7 +25,7 @@ $ sudo dnf install crystal
 ```bash
 $ sudo pacman -S crystal
 ```
-### Other Linux distris
+### Other Linux distros
  **visit** [crystal](crystal-lang.org/install)
 ## MacOs 
 ### Using Homebrew(recommended)
@@ -57,5 +57,69 @@ Crystal 1.16.0 (2025-05-06)
 LLVM: 15.0.7
 Default target: x86_64-pc-linux-gnu
 ```
+## Your first crystal project 
+- create a file named hello.cr
+  ```bash
+  $ touch hello.cr
+  ```
+  - in your code editor open the hello.cr or using nano
+    ```bash
+    $ nano hello.cr
+    ```
+  ```crystal
+  # hello.cr
+  puts "Hello world!"
+  ```
+  - Run it
+  ```bash
+  $ crystal hello.cr
+  ```
+  expected output
+  ```bash
+  Hello world!
+  ```
+## Compiling to binary 
+crystal can also compile your code to standalone executables(binary)
+```bash
+$ crystal build hello.cr -O hello
+# then run the hello file
+$ ./hello
+```
+
+## Troubleshooting 
+command not found after installation 
+- Restart your terminal
+- make sure that installation path is in your PATH
+### Permissions Issue
+if you get permission errors 
+```bash
+# not recommended to use sudo with crystall command
+# check file permission
+$ chmod +x hello.cr
+```
+## Knowledge Check
+- what command checks your crystall version?
+- how do you run a **crystal** file without compiling?
+
+## Additional Resources 
+- [official crystal installation guide](https://crystal-lang.org/install/)
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
