@@ -8,17 +8,17 @@
 
 ## What is a variable 
 a variable is basically a labeled box in which you put different types of data in it 
-in crystall each box can only contain or store a single type of data i.e you can't put a string in a box of Int
+in crystal each box can only contain or store a single type of data i.e you can't put a string in a box of Int
 ```crystal
 x = 64 
 ```
-The above code is a variable x holding 64 and Integer 
+The above code is a variable x holding 64( an  Integer )
 a box labeled x in the box there is 64 in it 
 
 crystal is smart enough to determine your data type 
 you can also explicitly tell crystal e.g 
 ```crystal 
-$ x : Int32 = 64 
+x : Int32 = 64 
 ```
 This way you are telling crystal that variable x is an integer attempting to add a string will result in error 
 
@@ -41,7 +41,7 @@ age : Int32 = 17
 country : String = "Nigeria"
 is_male : Bool = true 
 ```
-as programmer we are lazy you will agree with me the first version is better just focus on writing and let the compiler figure it out 
+as programmers, we are lazy you will agree with me the first version is better just focus on writing and let the compiler figure it out 
 
 ## Why Types or as i like to call it data types matter 
 Try this 
@@ -57,7 +57,7 @@ puts age + "10" # Error can't add number to text
 ```
 ## Naming your variables 
 as a quote i saw from the Odin project which says "write codes as if the future maintainer is the most laziest person on earth"
-i doubt if this is the exact text but what am just trying to say is you should try make you codes readble 
+i doubt if this is the exact text but what am just trying to say is you should try make you codes readable 
 ```text 
 crystal allows you to name variables 
 but it shouldn't begin with a number 
@@ -84,15 +84,20 @@ age = "13"
 puts age # Error different data types 
 ```crystal
 
-They may be some circumstances where we don't want a variable to change as devs we tend to make some mistakes knows as bugs and trust me they can be pretty annoying 
-crystal offers us Constant in which you can't reassign a value to an already initialized box(variable) 
+## Constants: Variables That Never Change
+
+Sometimes you have values that should stay the same throughout your program. Crystal lets you create constants for this.
+
+```crystal
+Age = 17  # Notice the capital A
+puts Age  #17
+```
 ```crystal
 Age = 17 
 puts Age # 17 
 Age = 19 
 puts Age # Error Age is a const
-```
-**Note** the capital letter this is to tell the compiler this is a Constant not a variable 
+``` 
 ## Common Mistake 
 ```crystal 
 name = John 
